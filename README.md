@@ -10,3 +10,5 @@ python flask learn
         * 440.【Flask URL】第一个flask程序详解
     * 441  `2020/02/05 22:00`
         * 441.【Flask URL】debug模式详解
+    * 442  `2020/02/06 22:25`
+        * 442.【Flask URL】配置文件两种方式详解
