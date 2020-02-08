@@ -18,3 +18,9 @@ python flask learn
         * 444.【Flask URL】url_for使用详解
     * 445 `2020/02/07 22:32`
         * 445.【Flask URL】自定义URL转换器
+    * 446 `2020/02/08 15:58`
+        * 446.【Flask URL】必会的小细节知识
+    * 447 `2020/02/08 21:41`
+        * 447.【Flask URL】重定向详解
+    * 448 `2020/02/08 22:55`
+        * 448.【Flask URL】Response详解
