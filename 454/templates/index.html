@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Flask常用过滤器详解</title>
+</head>
+<body>
+    <h3>自动转义过滤器</h3>
+    <h4>1.safe过滤器：可以关闭一个字符串的自动转义。</h4>
+    <h5>{{ script | safe }}</h5>
+    <h4>2.escape过滤器：对某一个字符串进行转义。</h4>
+    <p>{{ escapestr | e }}</p>
+    <h4>3.autoescape标签，可以对他里面的代码块关闭或开启自动转义</h4>
+    {% autoescape on %}
+        <h5>{{ escapestr }}</h5>
+    {% endautoescape %}
+
+    <hr>
+    <h3>常用过滤器</h3>
+    <h4>1.first(value)：返回一个序列的第一个元素</h4>
+    <h5>{{ persons | first }}</h5>
+    <h4>2.format(value,*arags,**kwargs)：格式化字符串</h4>
+    <h5>{{ "%s - %s" | format('hello', 'world') }}</h5>
+    <h4>3.last(value)：返回一个序列的最后一个元素</h4>
+    <h5>{{ persons | last }}</h5>
+    <h4>4.length(value)：返回一个序列或者字典的长度</h4>
+    <h5>{{ persons | length }}</h5>
+    <h4>5.join(value,d=u'')：将一个序列用d这个参数的值拼接成字符串</h4>
+    <h5>{{ persons | join('++') }}</h5>
+    <h4>6.safe(value)：如果开启了全局转义，那么safe过滤器会将变量关掉转义。</h4>
+    <h5>{{ script | safe }}</h5>
+    <h4>7.int(value)：将值转换为int类型</h4>
+    {% if age | int == 18 %}
+        <h5>{{ age }}：成年人</h5>
+    {% else %}
+        <h5>{{ age }}：未成年人</h5>
+    {% endif %}
+    <h4>11.replace(value,old,new)： 替换将old替换为new的字符串。</h4>
+    <h5>原字符串：{{ replacestr }}</h5>
+    <h5>替换后字符串：{{ replacestr | replace('hello', 'welcome') }}</h5>
+    <h4>12.truncate(value,length=255,killwords=False)：截取length长度的字符串</h4>
+    <h5>{{ longtxt | truncate(30) }}</h5>
+    <h4>13.striptags(value)：删除字符串中所有的HTML标签，如果出现多个空格，将替换成一个空格。</h4>
+    <h5>删除HTML标签前：{{ script }}</h5>
+    <h5>删除HTML标签后：{{ script | striptags }}</h5>
+    <h4>16.wordcount(s)：计算一个长字符串中单词的个数。</h4>
+    <h5>计算个数单词：{{ replacestr }}</h5>
+    <h5>{{ replacestr | wordcount }}</h5>
+</body>
+</html>

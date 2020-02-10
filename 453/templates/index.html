@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Flask default过滤器</title>
+</head>
+<body>
+    <h4>Flask default过滤器</h4>
+    <h5>position: {{ position | abs }}</h5>
+    <h5>signature: {{ signature }}</h5>
+    <h5>default过滤器</h5>
+    <h5>未添加 boolean = True signature: {{ signature | default('这个人什么都没留下') }}</h5>
+    <h5>添加 boolean = True signature： {{ signature | default('这个人什么都没留下', boolean=True) }}</h5>
+    <h5>or 方式 signature：{{ signature or '这个人什么都没留下' }}</h5>
+</body>
+</html>
