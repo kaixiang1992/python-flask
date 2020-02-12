@@ -1,0 +1,42 @@
+{% import "macros/macros.html" as marcros with context %}
+{% from "macros/macros.html" import input with context %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Flask 宏的导入和注意事项</title>
+</head>
+<body>
+    <h3>Flask 宏的导入和注意事项</h3>
+    <p>{{ username }}</p>
+    <h4>`import` "宏文件的路径" as xxx。</h4>
+    <form action="" method="get">
+        <div class="form-item">
+            <label>用户名：</label>
+            {{ marcros.input(name="username", value="", type="text") }}
+        </div>
+        <div class="form-item">
+            <label>密码：</label>
+            {{ marcros.input(name="userpsd", value="", type="password") }}
+        </div>
+        <div class="form-item">
+            {{ marcros.input(value="登录", type="submit") }}
+        </div>
+    </form>
+    <hr>
+    <h4>`from` '宏文件的路径' import 宏的名字 [as xxx]`</h4>
+    <form action="" method="get">
+        <div class="form-item">
+            <label>用户名：</label>
+            {{ input(name='accountname', value="", type="text") }}
+        </div>
+        <div class="form-item">
+            <label>密码：</label>
+            {{ input(name="accountpsd", value="", type="password") }}
+        </div>
+        <div class="form-item">
+            {{ input(value="登录", type="submit") }}
+        </div>
+    </form>
+</body>
+</html>

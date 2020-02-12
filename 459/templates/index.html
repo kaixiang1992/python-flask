@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Flask 九九乘法表案例</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0x;
+        }
+        .row{
+            width: 100%;
+            margin-bottom: 5px;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+        }
+        .colume{
+            padding: 8px 14px;
+            border: 1px solid #aaaaaa;
+            margin-left: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h3>Flask 九九乘法表</h3>
+    {% for row in range(1, 10) %}
+        <div class="row">
+            {% for column in range(1, row + 1) %}
+                <div class="colume">{{ column }} * {{ row }} = {{ row * column }}</div>
+            {% endfor %}
+        </div>
+    {% endfor %}
+</body>
+</html>

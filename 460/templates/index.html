@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Flask 宏的概念和基本使用</title>
+</head>
+<body>
+    <h3>Flask 宏的概念和基本使用</h3>
+    {% macro input(name="", value="", type="text")%}
+        <input type="{{ type }}" name="{{ name }}" value="{{ value }}">
+    {% endmacro %}
+    <form action="" method="get">
+        <div class="form-item">
+            <label>用户名：</label>
+            {{ input(name="username", value="", type="text") }}
+        </div>
+        <div class="form-item">
+            <label>密码：</label>
+            {{ input(name="userpsd", value="", type="password") }}
+        </div>
+        <div class="form-item">
+            {{ input(type="submit", value="登录") }}
+        </div>
+    </form>
+</body>
+</html>

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Flask if语句</title>
+</head>
+<body>
+    <h3>Flask if语句</h3>
+    {% if username == 'zhiliao' %}
+        <p>zhiliao ketang</p>
+    {% else %}
+        <p>not zhiliao keteng</p>
+    {% endif %}
+    {% if age|int >= 18 %}
+        <p>你可以去上网</p>
+    {% else %}
+        <p>未成年人不能上网</p>
+    {% endif %}
+</body>
+</html>

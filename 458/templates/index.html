@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Flask for循环语句详解</title>
+</head>
+<body>
+    <h3>for循环语句详解</h3>
+    <h4>正序循环列表</h4>
+    <ul>
+        {% for user in users %}
+            <li>{{ user }}</li>
+        {% else %}
+            <!-- TODO: 如果循环的对象没有值进入`else` -->
+            <li>暂无数据</li>
+        {% endfor %}
+    </ul>
+    <h4>逆序循环列表</h4>
+    <ul>
+        {% for user in users|reverse %}
+            <li>{{ user }}</li>
+        {% else %}
+            <li>暂无数据</li>
+        {% endfor %}
+        
+    </ul>
+    <hr>
+    <h3>循环字典</h3>
+    <table border="2">
+        <thead>
+            <th>用户名</th>
+            <th>年纪</th>
+            <th>国家</th>
+        </thead>
+        <tbody>
+            <tr>
+                {% for value in person.values() %}
+                    <td>{{ value }}</td>
+                {% else %}
+                    <td>暂无数据</td>
+                {% endfor %}
+            </tr>
+            <tr>
+                {% for key,value in person.items() %}
+                    <td>{{ value }}</td>
+                {% else %}
+                    <td>暂无数据</td>
+                {% endfor %}
+            </tr>
+            <tr>
+                {% for key in person.keys() %}
+                    <td>{{ key }}</td>
+                {% else %}
+                    <td>暂无数据</td>
+                {% endfor %}
+            </tr>
+        </tbody>
+    </table>
+    <hr>
+    <h3>循环序列</h3>
+    <table border="1" cellpadding="3" cellspacing="3">
+        <thead>
+            <th>序号</th>
+            <th>书名</th>
+            <th>作者</th>
+            <th>价格</th>
+            <th>总数</th>
+        </thead>
+        <tbody>
+            {% for book in books %}
+                {% if loop.first %}
+                    <tr style="background-color: red">
+                {% elif loop.last %}
+                    <tr style="background-color: pink">
+                {% else %}
+                    <tr>
+                {% endif %}
+                    <td>{{ loop.index }}</td>
+                    <td>{{ book.bookname }}</td>
+                    <td>{{ book.author }}</td>
+                    <td>¥{{ book.price }}</td>
+                    <td>{{ loop.length }}</td>
+                </tr>
+            {% else %}
+                <div>暂无数据</div>
+            {% endfor %}
+        </tbody>
+    </table>
+</body>
+</html>
