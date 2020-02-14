@@ -1,0 +1,22 @@
+<style>
+    nav{
+        width: 100%;
+        overflow: hidden;
+        margin-bottom: 40px;
+    }
+    nav li{
+        float: left;
+        margin: 0px 20px;
+    }
+</style>
+<nav>
+    <ul>
+        <li><a href="{{ url_for('index') }}">首页</a></li>
+        <li><a href="{{ url_for('details') }}">课程分类</a></li>
+        <li>微专业</li>
+        <li>个人中心</li>
+        {% if username %}
+            <li>{{ username }}</li>
+        {% endif %} 
+    </ul>
+</nav>

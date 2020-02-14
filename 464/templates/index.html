@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Flask 加载静态文件</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename="css/index.css") }}">
+</head>
+<body>
+    <h3>Flask 加载图片文件</h3>
+    <img src="{{ url_for('static', filename="img/1.jpg") }}" width="300px">
+    <button class="testbtn">测试JavaScript文件是否加载</button>
+    <script src="{{ url_for('static', filename="js/index.js") }}"></script>
+</body>
+</html>

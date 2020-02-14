@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Flask set和with语句以及模版中定义变量</title>
+</head>
+<body>
+    <h3>Flask set和with语句以及模版中定义变量</h3>
+    <h4>set语句：</h4>
+    {% set username='zhiliao' %}
+    <p>set username value：{{ username }}</p>
+    <h4>with语句：</h4>
+    {% with classname='python01'  %}
+        <p>with classname value：{{ classname }}</p>
+    {% endwith %}
+    <p>with外不能获取<code>classname</code>：{{ classname }}</p>
+    <h4>定义一个空的`with`语句：</h4>
+    {% with %}
+        {% set category='IT' %}
+        <p>定义空的<code>with</code>语句<code>category</code>：{{ category }}</p>
+    {% endwith %}
+    <p>with外不能获取<code>category</code>：{{ category }}</p>
+</body>
+</html>
