@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>豆瓣小程序</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            text-decoration: none;
+            font-style: normal;
+        }
+        .container{
+            width: 375px;
+            height: 600px;
+            background: pink;
+        }
+
+        .search-group{
+            padding: 14px 8px;
+            background: #41be57;
+        }
+        .search-group .search-input{
+            background: #fff;
+            display: block;
+            width: 100%;
+            height: 30px;
+            border-radius: 5px;
+            outline: none;
+            border: none;
+        }
+
+        .item-list-group .item-list-top{
+            overflow: hidden;
+            padding: 10px;
+        }
+        .item-list-top .module-title{
+            float: left;
+        }
+        .item-list-top .more-btn{
+            float: right;
+        }
+
+        .list-group{
+            overflow: hidden;
+            padding: 0 10px;
+        }
+        .list-group .item-group{
+            float: left;
+            margin-right: 10px;
+        }
+        .item-group .thumbnail{
+            display: block;
+            width: 100px;
+        }
+        .item-group .item-title{
+            font-size: 12px;
+            text-align: center;
+        }
+        .item-group .item-rating{
+            font-size: 12px;
+            text-align: center;
+        }
+        .item-rating img{
+            width: 10px;
+            height: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="search-group">
+            <input type="text" class="search-input" />
+        </div>
+        <div class="item-list-group">
+            <div class="item-list-top"> 
+                <div class="module-title">电影</div>
+                <div class="more-btn">更多</div>
+            </div>
+            <div class="list-group">    
+                <div class="item-group">
+                    <img src="https://img1.doubanio.com/view/photo/s_ratio_poster/public/p2570243317.jpg" class="thumbnail" alt="">
+                    <p class="item-title">1917</p>
+                    <p class="item-rating">
+                        {% set score=7.5 %}
+                        <!--TODO: 计算满星 -->
+                        {% set lights= ((score|int)/2)|int %}
+                        <!--TODO: 计算半星 -->
+                        {% set halfs= (score|int)%2 %}
+                        <!--TODO: 计算空星 -->
+                        {% set emptystars = 5 - lights - halfs %}
+                        {% for light in range(0, lights) %}
+                            <img src="{{ url_for('static', filename="img/rate_light.png") }}" alt="">
+                        {% endfor %}
+                        {% for half in range(0, halfs) %}
+                            <img src="{{ url_for('static', filename="img/rate_half.png") }}" alt="">
+                        {% endfor %}
+                        {% for emptystar in range(0, emptystars) %}
+                            <img src="{{ url_for('static', filename="img/rate_gray.png") }}" alt="">
+                        {% endfor %}
+                        <em>{{ score }}</em>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

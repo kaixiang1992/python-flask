@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+
+{% block title_block %}
+首页
+{% endblock %}
+
+{% block body_block %}
+    {{ super() }}
+    <p>调用另一个<code>block</code>中的代码：{{ self.title_block() }}</p>
+    <p>这是首页引用父模板</p>
+{% endblock %}
+
+<h4>不会被渲染代码示例</h4>

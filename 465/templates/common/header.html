@@ -1,0 +1,28 @@
+<style>
+    header{
+        width: 100%;
+        margin-bottom: 20px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    header ul{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    header ul li{
+        margin: 0px 20px;
+    }
+</style>
+<header>
+    <ul>
+        <li><a href="{{ url_for('index') }}">首页</a></li>
+        <li><a href="{{ url_for('detail') }}">课程详情</a></li>
+        <li>视频教程</li>
+        <li>关于我们</li>
+        {% if username %}
+            <li>{{ username }}</li>
+        {% endif %} 
+    </ul>
+</header>

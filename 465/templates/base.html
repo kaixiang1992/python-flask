@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title_block %}{% endblock %}</title>
+</head>
+<body>
+    {% include 'common/header.html' %}
+    <section class="section">
+        {% block body_block %}
+            <p>这是父模板保留的公共需要代码</p>
+        {% endblock %}
+    </section>
+    {% include 'common/footer.html' %}
+</body>
+</html>
