@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+
+{% block body_block %}
+    <ul>
+        <li><a href="{{ url_for('index') }}">首页</a></li>
+        <li><a href="{{ url_for('login') }}">登录</a></li>
+        <li><a href="{{ url_for('registered') }}">注册</a></li>
+        <li><a href="{{ url_for('list') }}">测试<code>Response</code>JSON类型</a></li>
+    </ul>
+{% endblock %}

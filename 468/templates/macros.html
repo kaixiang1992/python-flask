@@ -1,0 +1,39 @@
+<!--TODO: 分类列表宏-->
+{% macro listGroup(group_tit, items, category) %}
+    <div class="item-list-group">
+        <div class="item-list-top">
+            <div class="module-title">{{ group_tit }}</div>
+            <div class="more-btn"><a href="{{ url_for('my_list', category=category) }}">更多</a></div>
+        </div>
+        <div class="list-group">
+            {% for item in items[0:3] %}
+                {{ itemGroup(item.thumbnail, item.title, item.rating) }}
+            {% endfor %}
+        </div>
+    </div>
+{% endmacro %}
+<!--TODO: 列表数据宏-->
+{% macro itemGroup(img, title, score)%}
+    <div class="item-group">
+        <img src="{{ img }}" class="thumbnail" alt="">
+        <p class="item-title">{{ title }}</p>
+        <p class="item-rating">
+            <!--TODO: 计算满星 -->
+            {% set lights= ((score|int)/2)|int %}
+            <!--TODO: 计算半星 -->
+            {% set halfs= (score|int)%2 %}
+            <!--TODO: 计算空星 -->
+            {% set emptystars = 5 - lights - halfs %}
+            {% for light in range(0, lights) %}
+                <img src="{{ url_for('static', filename="img/rate_light.png") }}" alt="">
+            {% endfor %}
+            {% for half in range(0, halfs) %}
+                <img src="{{ url_for('static', filename="img/rate_half.jpg") }}" alt="">
+            {% endfor %}
+            {% for emptystar in range(0, emptystars) %}
+                <img src="{{ url_for('static', filename="img/rate_gray.png") }}" alt="">
+            {% endfor %}
+            <em>{{ score }}</em>
+        </p>
+    </div>
+{% endmacro %}

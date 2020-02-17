@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+{% from 'macros.html' import listGroup, itemGroup %}
+
+{% block title_block %}实战--豆瓣微信小程序{% endblock %}
+
+{% block body_block %}
+    {{ listGroup('电影', movies, 1) }}
+    {{ listGroup('电视剧', tvs, 2) }}
+{% endblock %}
+

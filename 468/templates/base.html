@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title_block %}{% endblock %}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename="css/base.css") }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename="css/item.css") }}">
+    {% block head_block %}{% endblock %}
+</head>
+<body>
+    <div class="container">
+        <div class="search-group">
+            <input type="text" class="search-input" />
+        </div>
+        {% block body_block %}{% endblock %}
+    </div>
+</body>
+</html>
