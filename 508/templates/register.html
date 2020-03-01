@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>注册</title>
+</head>
+<body>
+    <h3>WTForms表单验证基本使用</h3>
+    <ul>
+        <li><a href="{{ url_for('index') }}">首页</a></li>
+    </ul>
+    <form action="" method="post">
+        <table>
+            <tbody>
+            <tr>
+                <td>用户名：</td>
+                <td><input type="text" name="username"></td>
+            </tr>
+            <tr>
+                <td>密码：</td>
+                <td><input type="text" name="password"></td>
+            </tr>
+            <tr>
+                <td>重复密码：</td>
+                <td><input type="text" name="repeat_password"></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><button type="submit">提交</button></td>
+            </tr>
+            </tbody>
+        </table>
+    </form>
+</body>
+</html>

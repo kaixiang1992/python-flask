@@ -128,4 +128,20 @@ python flask learn
         * 499.【Flask数据库】subquery实现复杂查询
     * 500 `2020/02/28 20:58`  [`Flask-SQLAlchemy -- 重点`]
         * 500.【Flask数据库】Flask-SQLAlchemy的使用
-    * 欠：1+4+2 = 7节课
+    * 501 `2020/02/29 16:02`  [`alembic数据库迁移 -- 重点`]
+        * 501.【Flask数据库】alembic数据库迁移工具基本使用
+    * 502 `2020/03/01 13:14`  [`alembic数据库迁移 -- 重点`]
+        * 502.【Flask数据库】alembic常用命令和经典错误解决办法
+    * 503 `2020/03/01 14:29`  [`Flask-SQLAlchemy下alembic的配置 -- 重点`]
+        * 503.【Flask数据库】Flask-SQLAlchemy下alembic的配置
+    * 504 `2020/03/01 15:44`  [`Flask-Scripts -- 重点`]
+        * 504.【Flask数据库】Flask-Scripts详细讲解
+    * 505 `2020/03/01 17:17`
+        * 505.【Flask数据库】项目结构重构
+    * 506 `2020/03/01 18:25`  [`Flask-Migrate -- 重点`]
+        * 506.【Flask数据库】Flask-Migrate详细讲解
+    * 507 `2020/03/01 20:50`  [`Flask-Migrate -- 重点`]
+        * 507.【Flask数据库】Flask-Migrate注意事项
+    * 508 `2020/03/01 21:52`  [`WTForms -- 重点`]
+        * 508.【WTForms】WTForms表单验证基本使用
+    * 欠：7节课

@@ -29,39 +29,41 @@ class User(db.Model):
 # TODO: 定义Article模型
 class Article(db.Model):
     __tablename__ = 'article'
-    id = db.Column(db.Integer, primary_key=True, default=True)
+    id = db.Column(db.Integer, primary_key=True, autoincrement=True)
     title = db.Column(db.String(50), nullable=False)
     uid = db.Column(db.Integer, db.ForeignKey('user.id'))
     create_time = db.Column(db.DATETIME, default=datetime.now)
 
     authors = db.relationship('User', backref=db.backref('articles'), uselist=False)
-    # authors = db.relationship('User', backref='articles')
+
+    def __repr__(self):
+        return '<Article(title=%s)>' % self.title
 
 
-# # TODO: 3.将ORM模型映射到数据库
+# TODO: 3.将ORM模型映射到数据库
+# TODO: 3.1 创建测试数据
+# TODO: TODO: 4.使用session提交数据
 # db.drop_all()
 # db.create_all()
-#
-# # TODO: 3.1 创建测试数据
 # user1 = User(name='zhiliao')
-# # user2 = User(name='ketang')
+# user2 = User(name='ketang')
 # article1 = Article(title='title1')
-# # article2 = Article(title='title2')
-# # article3 = Article(title='title3')
+# article2 = Article(title='title2')
+# article3 = Article(title='title3')
 # user1.articles.append(article1)
-# # user2.articles.append(article2)
-# # user2.articles.append(article3)
+# user1.articles.append(article2)
+# user2.articles.append(article3)
 #
-#
-# # TODO: 4.使用session提交数据
-# db.session.add(user1)
-# # db.session.add(user2)
-# # db.session.add(article3)
+# db.session.add_all([user1, user2])
 # db.session.commit()
 
+
 # TODO: 5.查询数据
-user = User.query.all()
-print(user)  # TODO: [<User(name=zhiliao)>]
+# user = User.query.all()
+# print(user)  # TODO: [<User(name=zhiliao)>, <User(name=ketang)>]
+
+user = User.query.first()
+print(user.articles) # TODO: [<Article(title=title1)>, <Article(title=title2)>]
 
 
 @app.route('/')
