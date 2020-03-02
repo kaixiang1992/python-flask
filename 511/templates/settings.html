@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>使用WTForms渲染模版</title>
+    <style>
+        .basic_input{
+            background-color: gainsboro;
+        }
+    </style>
+</head>
+<body>
+    <h3>使用WTForms渲染模版</h3>
+    <form action="{{ url_for('settings') }}" method="post">
+        <table>
+            <tr>
+                <td>{{ form.username.label }}</td>
+                <td>{{ form.username(class="basic_input") }}</td>
+            </tr>
+            <tr>
+                <td>{{ form.age.label }}</td>
+                <td>{{ form.age() }}</td>
+            </tr>
+            <tr>
+                <td>{{ form.remember.label }}</td>
+                <td>{{ form.remember() }}</td>
+            </tr>
+            <tr>
+                <td>{{ form.tags.label }}</td>
+                <td>{{ form.tags() }}</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><button type="submit">提交</button></td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>

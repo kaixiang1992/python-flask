@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>自定义验证验证字段</title>
+</head>
+<body>
+    <h3>自定义验证验证字段</h3>
+    <form action="{{ url_for('login') }}" method="post">
+        <table>
+            <tbody>
+                <tr>
+                    <td>验证码</td>
+                    <td><input type="text" name="code" value="1234"></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><button type="submit">提交</button></td>
+                </tr>
+            </tbody>
+        </table>
+    </form>
+</body>
+</html>

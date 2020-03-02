@@ -142,6 +142,12 @@ python flask learn
         * 506.【Flask数据库】Flask-Migrate详细讲解
     * 507 `2020/03/01 20:50`  [`Flask-Migrate -- 重点`]
         * 507.【Flask数据库】Flask-Migrate注意事项
-    * 508 `2020/03/01 21:52`  [`WTForms -- 重点`]
+    * 508 `2020/03/01 21:52`  [`WTForms表单验证 -- 重点`]
         * 508.【WTForms】WTForms表单验证基本使用
-    * 欠：7节课
+    * 509 `2020/03/02 21:57`  [`WTForms表单验证 -- 重点`]
+        * 509.【WTForms】WTForms常用验证器
+    * 510 `2020/03/02 22:54`  [`WTForms表单验证 -- 重点`]
+        * 510.【WTForms】自定义验证验证字段
+    * 511 `2020/03/02 23:35`  [`WTForms表单验证 -- 重点`]
+        * 511.【WTForms】使用WTForms渲染模版
+    * 欠：8节课
