@@ -158,4 +158,8 @@ python flask learn
         * 514.【Flask Cookie】cookie的基本概念
     * 515 `2020/03/03 23:41`  [`cookie -- 重点`]
         * 515.【Flask Cookie】Flask设置和删除cookie
-    * 欠：8节课
+    * 516 `2020/03/04 22:43`  [`cookie -- 重点`]
+        * 516.【Flask Cookie】Flask设置cookie过期时间
+    * 517 `2020/03/04 23:34`  [`cookie -- 重点`]
+        * 517.【Flask Cookie】设置Cookie的有效域名
+    * 欠：10节课
