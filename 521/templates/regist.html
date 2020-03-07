@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>注册</title>
+</head>
+<body>
+    <form action="{{ url_for('regist') }}" method="post">
+        <table>
+            <tbody>
+            <tr>
+                <td>邮箱</td>
+                <td><input type="email" name="email"></td>
+            </tr>
+            <tr>
+                <td>用户名</td>
+                <td><input type="text" name="username"></td>
+            </tr>
+            <tr>
+                <td>密码</td>
+                <td><input type="password" name="psd"></td>
+            </tr>
+            <tr>
+                <td>重复密码</td>
+                <td><input type="password" name="psd_repeat"></td>
+            </tr>
+            <tr>
+                <td>账户金额</td>
+                <td><input type="number" name="money"></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><button type="submit">提交</button></td>
+            </tr>
+            </tbody>
+        </table>
+    </form>
+</body>
+</html>
