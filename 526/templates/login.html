@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+{% block title %}登录{% endblock %}
+
+{% block head %}
+<script src="{{ url_for('static', filename="js/login.js") }}"></script>
+{% endblock %}
+
+{% block body %}
+    <form action="{{ url_for('login') }}" method="post" class="loginForm">
+        <table>
+            <tbody>
+            <tr>
+                <td>邮箱</td>
+                <td><input type="email" name="email"></td>
+            </tr>
+            <tr>
+                <td>密码</td>
+                <td><input type="password" name="psd"></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><button type="button" class="submitbutton">提交</button></td>
+            </tr>
+            </tbody>
+        </table>
+    </form>
+{% endblock %}
