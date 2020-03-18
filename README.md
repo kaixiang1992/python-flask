@@ -198,4 +198,10 @@ python flask learn
         * 534.【Flask信号】Flask内置的信号讲解
     * 535 `2020/03/17 23:30`  [`Restful API -- 重点`]
         * 535.【Flask Restful】Restful API规范介绍
-    * 欠：10+4*5+8 = 38节课
+    * 536 `2020/03/18 20:15`  [`Restful API -- 重点`]
+        * 536.【Flask Restful】Flask-Restful插件的基本使用
+    * 537 `2020/03/18 21:31`  [`Restful API -- 重点`]
+        * 537.【Flask Restful】Flask-Restful参数验证
+    * 538 `2020/03/18 22:19`  [`Restful API -- 重点`]
+        * 538.【Flask Restful】Flask-Restful标准化返回参数（1）
+    * 欠：10+4*5+8 + 1 = 39节课
