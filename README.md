@@ -204,4 +204,6 @@ python flask learn
         * 537.【Flask Restful】Flask-Restful参数验证
     * 538 `2020/03/18 22:19`  [`Restful API -- 重点`]
         * 538.【Flask Restful】Flask-Restful标准化返回参数（1）
-    * 欠：10+4*5+8 + 1 = 39节课
+    * 539 `2020/03/19 20:37`  [`Restful API -- 实战 -- 重点`]
+        * 539.【Flask Restful】Flask-Restful标准化返回参数（2）
+    * 欠：10+4*5+12 = 42节课
