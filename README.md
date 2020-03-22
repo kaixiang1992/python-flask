@@ -206,4 +206,20 @@ python flask learn
         * 538.【Flask Restful】Flask-Restful标准化返回参数（1）
     * 539 `2020/03/19 20:37`  [`Restful API -- 实战 -- 重点`]
         * 539.【Flask Restful】Flask-Restful标准化返回参数（2）
+    * 540 `2020/03/22 11:06`  [`Restful API -- 实战 -- 重点`]
+        * 540.【Flask Restful】Flask-Restful细节强化
+    * 541 `2020/03/22 13:26`
+        * 541.【memcached】memcached介绍
+    * 542 `2020/03/22 13:43`  [`Ubuntu -- 类Redis`]
+        * 542.【memcached】memcached的安装和参数详解
+    * 543 `2020/03/22 16:35`  [`Ubuntu -- 类Redis`]
+        * 543.【memcached】telnet操作memcached
+    * 544 `2020/03/22 17:29`  [`Ubuntu -- 类Redis`]
+        * 544.【memcached】Python操作memcached
+    * 545 `2020/03/22 20:40`  [`Ubuntu -- 类Redis`]
+        * 545.【memcached】memcached的安全机制
+    * 546 `2020/03/22 21:30`  [`Ubuntu -- Redis -- 重点`]
+        * 546.【Redis】Redis概述和使用场景介绍
+    * 547 `2020/03/22 21:44`  [`Ubuntu -- Redis -- 重点`]
+        * 547.【Redis】Redis的安装以及客户端连接
     * 欠：10+4*5+12 = 42节课
