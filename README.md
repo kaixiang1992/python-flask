@@ -228,4 +228,12 @@ python flask learn
         * 549.【Redis】Redis列表操作
     * 550 `2020/03/23 23:40`  [`Ubuntu -- Redis -- 重点`]
         * 550.【Redis】Redis集合操作
+    * 551 `2020/03/24 20:55`  [`Ubuntu -- Redis -- 重点`]
+        * 551.【Redis】Redis的哈希操作
+    * 552 `2020/03/24 21:32`  [`Ubuntu -- Redis -- 重点`]
+        * 552.【Redis】Redis的事务操作
+    * 553 `2020/03/24 22:05`  [`Ubuntu -- Redis -- 重点`]
+        * 553.【Redis】Redis的发布和订阅操作
+    * 554 `2020/03/24 22:05`  [`Ubuntu -- Redis -- 重点`]
+        * 554.【Redis】RDB和AOF的两种数据持久化机制 ---  RDB部分13"44"
     * 欠：10+4*5+12+5 = 47节课
