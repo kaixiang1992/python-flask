@@ -234,6 +234,12 @@ python flask learn
         * 552.【Redis】Redis的事务操作
     * 553 `2020/03/24 22:05`  [`Ubuntu -- Redis -- 重点`]
         * 553.【Redis】Redis的发布和订阅操作
-    * 554 `2020/03/24 22:05`  [`Ubuntu -- Redis -- 重点`]
+    * 554 `2020/03/24 22:05`  [`Ubuntu -- Redis -- 面试重点`]
         * 554.【Redis】RDB和AOF的两种数据持久化机制 ---  RDB部分13"44"
+    * 554 `2020/03/25 22:18`  [`Ubuntu -- Redis -- 面试重点`]
+        * 554.【Redis】RDB和AOF的两种数据持久化机制 ---  AOF部分
+    * 555 `2020/03/25 22:48`  [`Ubuntu -- Redis -- 重点`]
+        * 555.【Redis】Redis设置连接密码
+    * 556 `2020/03/25 23:16`  [`Ubuntu -- Redis -- 重点`]
+        * 556.【Redis】其他机器连接本机redis
     * 欠：10+4*5+12+5 = 47节课
