@@ -244,7 +244,6 @@ python flask learn
         * 556.【Redis】其他机器连接本机redis
     * 557 `2020/03/29 15:14`  [`Ubuntu -- Redis -- 重点`]
         * 557.【Redis】Python操作redis
-    * 559 `2020/03/29 16:44`  [`Flask项目实战`]
+    * 558 - 632 `2020/03/29 16:44`  [`Flask项目实战`]
         * 【Flask项目实战】项目结构搭建
-        * bbs
-    * 欠：10+40+12 = 62节课
+        * [bbs](https://github.com/kaixiang1992/bbs)
