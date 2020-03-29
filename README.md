@@ -242,4 +242,9 @@ python flask learn
         * 555.【Redis】Redis设置连接密码
     * 556 `2020/03/25 23:16`  [`Ubuntu -- Redis -- 重点`]
         * 556.【Redis】其他机器连接本机redis
-    * 欠：10+4*5+12+5 = 47节课
+    * 557 `2020/03/29 15:14`  [`Ubuntu -- Redis -- 重点`]
+        * 557.【Redis】Python操作redis
+    * 559 `2020/03/29 16:44`  [`Flask项目实战`]
+        * 【Flask项目实战】项目结构搭建
+        * bbs
+    * 欠：10+40+12 = 62节课
